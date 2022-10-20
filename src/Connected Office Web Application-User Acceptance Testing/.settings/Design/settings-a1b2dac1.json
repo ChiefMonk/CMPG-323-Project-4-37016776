@@ -1,0 +1,7 @@
+{
+  "UiPath.UIAutomationNext.Activities.Generic.CaptureScreenshots": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.EdgeInteractionMode": "DebuggerApi",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.FullSelector": "False",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.FuzzySelector": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.IgnoreSelectorsWithIdx": "True"
+}
