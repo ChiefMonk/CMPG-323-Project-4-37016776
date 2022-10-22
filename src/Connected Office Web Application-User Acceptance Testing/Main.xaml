@@ -1,14 +1,6 @@
-<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#"
- xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
- xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
- xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
- xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
- xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
- xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1182,1701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="90">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -31,10 +23,35 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-    </sco:Collection>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="128">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
@@ -53,13 +70,745 @@
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-    </sco:Collection>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+    </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1"/>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="780,5377" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="UAT Testing" sap:VirtualizedContainerService.HintSize="738,5287" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="ConnectedOfficeWebUrl">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String">https://connectedoffice-devicemanagement.azurewebsites.net</Literal>
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Test the Connected Office Device Management" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: Home Page - Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="676,5134" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="642,1772" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600,1682" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Username" />
+                  <Variable x:TypeArguments="x:String" Name="Password" />
+                  <Variable x:TypeArguments="x:Boolean" Name="IsUserLoggedIn" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Connected Office: Device Management : Login" sap:VirtualizedContainerService.HintSize="538,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="482,71" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Username</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">37016776@student.g.nwu.ac.za</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="482,71" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Password</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">@St37016776@</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NCheckState DisplayName="Check App State 'Logout'" sap:VirtualizedContainerService.HintSize="482,61" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Timeout="3" Version="V3">
+                    <uix:NCheckState.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">IsUserLoggedIn</CSharpReference>
+                      </OutArgument>
+                    </uix:NCheckState.Exists>
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,82" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,82" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="25, 533, 54, 21" DesignTimeScaleFactor="1" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='Logout' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='B' type='' class='' check:innerText='Logout' /&gt;" Guid="284a0fbc-8a63-4f2d-9a3a-5d365ac3efb2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAZCAYAAABggz2wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFISURBVFhH7ZQ9FoIwDIA9lJOTl/E9N87AysAJ2F08ADsDGwdg4A54gWiRNilpEHxSfIXhG/pDmq9JOTSPFrbALhoau2ho7KKhsU3RPD3D8fQiukFF5kMgKFGd/+Ves7WARAuIVe6/E8WAhrRg+0wsxStefr/24wRysq8y85orZA2J1dzg0q/FpZ4fSJUJ+R7B/XNFhYAd5BtLkqFFa8gi1/obk6R/UZIYXSeHdIFJYthCtAt60eF30hlTRMU5ZIaoFEi6XbsFsUXfosOxtM+/qLNSCvsATHRcFNv730Snti4Zu5IwAl+0ron34YzpogyeHMPIj/9ksILj+1zVc4FSPB7GmCuqIDes4TdoJ6fWpTfJz7TXO6wz1ZMQqjfITRRdDqHtPbKIaJ7aVcFqut+PDxYSxfaxWKmaCm+ia1VS4+mNrs9GRFt4Ah5MKV0+I/zbAAAAAElFTkSuQmCC" InformativeScreenshot="0505a09185d3d6b6d4fd5aebd137b3ce.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                  <If sap2010:Annotation.AnnotationText="If user is currently logged in, logout first" sap:VirtualizedContainerService.HintSize="482,550" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">IsUserLoggedIn</CSharpValue>
+                      </InArgument>
+                    </If.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,256" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Logout'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/" DesignTimeRectangle="25, 533, 54, 21" DesignTimeScaleFactor="1" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='Logout' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='B' type='' class='' check:innerText='Logout' /&gt;" Guid="9531c4ce-a4db-43bb-9b01-23bae405b9ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAZCAYAAABggz2wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFISURBVFhH7ZQ9FoIwDIA9lJOTl/E9N87AysAJ2F08ADsDGwdg4A54gWiRNilpEHxSfIXhG/pDmq9JOTSPFrbALhoau2ho7KKhsU3RPD3D8fQiukFF5kMgKFGd/+Ves7WARAuIVe6/E8WAhrRg+0wsxStefr/24wRysq8y85orZA2J1dzg0q/FpZ4fSJUJ+R7B/XNFhYAd5BtLkqFFa8gi1/obk6R/UZIYXSeHdIFJYthCtAt60eF30hlTRMU5ZIaoFEi6XbsFsUXfosOxtM+/qLNSCvsATHRcFNv730Snti4Zu5IwAl+0ron34YzpogyeHMPIj/9ksILj+1zVc4FSPB7GmCuqIDes4TdoJ6fWpTfJz7TXO6wz1ZMQqjfITRRdDqHtPbKIaJ7aVcFqut+PDxYSxfaxWKmaCm+ia1VS4+mNrs9GRFt4Ah5MKV0+I/zbAAAAAElFTkSuQmCC" InformativeScreenshot="3787be2e31aec67d1fb0e4c62c7f1234.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <uix:NClick sap2010:Annotation.AnnotationText="Navigate to Login page" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click the 'Login' menu option" sap:VirtualizedContainerService.HintSize="482,92" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="8, 377, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl aaname='Login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Login' tag='A' type='' class='nav-link text-dark' check:innerText='Login' /&gt;" Guid="be01da60-7f04-4c2f-8ae0-faaded173228" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIbSURBVHhe7doxbtpgGMdhrtF70A6dunStunAEJLacIWsGTpA9Sw7AniFbDpCBO7QXcO3gF38GV6USIa/N85ceiYKdbD99ppktFosqtv39C+DDxQQKSCcmUEA6MYEC0okJFJBOTKCAdGICBaQTEyggnZhAAenEBApIJyZQQDoxgQLSiQkUkE5MoIB0YgIFpBMTKCCd2IgD9VTdfv1WzWu3z0OfA2MVO2ugNutdMOY3D9XLwOdn9Xy3+1215ePr8DXAKMXGGygnKJis2IgDBUxV7AMC1Z189tZPR9ftf1aj/nmbx1X777tq01yzfaiW7edxgnrpXdP/PU5ZMB6xywaq+N7oSHFPL05HTgnUqlrelPc02vuA9GIXDNRrdR/RKD8vovUWmiI83Zff5WnolEB195bvOUXBOMQuGKguMv3/dTt4fx+sVXW/7e7vP77V7/3zEa+9d+A6ILfY5QI1eDJq9ANVPqYJFFynWL5HvMG/b/rfRzyBgjGLvU+gjrTBOOlL8iJkgwQKpi522UA1imCE/iNfozwxHT76CRRMXeysgXo/f3k8BCYpljJQm3VxAqp1J6Oh0xYwNbGkgWpPS4ecnuAqxEYTKCcnuB6xkXwHBVyTmEAB6cQECkgnJlBAOjGBAtKJCRSQTmz28/un9qVAATnEZosfX9qXAgXkEBMoIJ1YHajP7UuBAnKICRSQTqwO1Lx9KVBADrtV1R/Swf3jWdmXBQAAAABJRU5ErkJggg==" InformativeScreenshot="b3ba579966556c64f1559ebfa7612bcb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the Username" ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="482,92" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Input_Email'" FullSelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control input-validation-error' aaname='Email' /&gt;" Guid="6cb07797-8409-4035-b449-be49b88ede12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="0ec25f13fd0a502f52ee5d38e8173235.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="330, 398, 38, 24" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAcCAYAAAAX4C3rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVFhH7ZNBDoMgEEV7FRcueizThSfpQm7ShKPUeAwTeogp4qAjaE11TDGdl5CGAb7PKV7gJIgoNyLKjYhyI6Jf8VSQ5SU82n5aV1fIqqafIFPRVkOR203BKPQLNxzENtHxwK/4I1H3Fymo3S9ejZsGY5eMLqPaSAN3v+aGzcAVh8/FKZMoDSECQY3ea6PVJNOJ0JfZJooPHgYRDwI7+k7O1KKuEsKcYzq6LrVYmzQgOVG8HnRPkh2dOZOmaJTpP8Ddol1IMD50Z1XUz4c8e353RxNGRLkRUW5ElJuTiAK8AWt6Nt6VXORUAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Username</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the Password" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="482,92" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 540, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Input_Password'" FullSelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control input-validation-error' aaname='Password' /&gt;" Guid="067bf431-0de9-48e9-9b0d-241ebf902d56" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="5a1a1c67e7892c27b192956255e9eb5b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="330, 508, 66, 24" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAcCAYAAADcO8kVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVFhH7ZTNjQIxDIW3lT1woCzEgUo4QCdIUwqIMpCgCG/s2Imd2OLntEJ+0mgXx3Gev/HkB1KuEkygBBMowQRKMIESTKAEEyjBBEowqPMRfldHuPBPlAVzW2CzWpck/ezgdOP1b9VrYCyI+7L7fjifgAF4wGm7hs3y4N9fqM/AAFwO5ZM6XOn/OkH9U5uA0SF9XfahqI5a259L0DFVz7Ax3KvPGn3oc0hSV/xsF7jzkvUhOW+D0RNzhb02wHcSNdh+6/09nxpR5tB43VdydA0+D033mM2pjelGeM9Q3wNGe3Ue9/A2mNmE1vCZOeRFVGd8qyxcazXIQ4HmxKiu45E0xsnLkBftfW1iEIR6NF1SfXs6p494f9s9xmq1Z2NmmtAkAsS/HKN1gariVvXsNmVOs+FeJ/elO0Yk3/U49hMEBW9aIxMDIHUuTk+tjzUw5jT8v8B4ECIwVdO90jTuk6YQRjdYIdlY6HGMR2CcvfWFfwxmvidkglqD5eA+TRbM5aAPnoFKLa/+CJd8mEZqPXOHeWAkT9ejnsd6b4IZ75fNcrUNkpm+rg3UZvozTRkb1GAlNuUWPa3ngkExHNmLHp1cCybVlGACJZhACSZQggmUYAIlmEAJxhXAHwfwtMHn8mTVAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.Text>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Password</CSharpValue>
+                      </InArgument>
+                    </uix:NTypeInto.Text>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NClick sap2010:Annotation.AnnotationText="Click 'Login in' button to login" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="482,103" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Identity/Account/Login" DesignTimeRectangle="330, 666, 70, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='btn btn-primary' aaname='Log in' check:innerText='Log in' /&gt;" Guid="fe917b24-cb36-4a54-89c3-a823ef79dd21" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVGhD7Zq9TsMwFEZ5DER5Kt4AiYUBHqIbL5IJZWek6pCVNUPF1mxVh3bpcOvP+XMcm1xCEtL6ftKR2vjajU9tT74hCSsiipmGqK/vHT28rej+Kabbx/cgwdzhAC7MVKLQgKK75w9avHzS4nUVJmrucAAXpqxKFCxqSa7OAQIXcFKmEgWDQa8kG+UCTspUorA/nR0CBk7KiKgfEFFMRBQTEcVERDERUUxEFBMRxeRKRG1ofVQvnm0dbcMwrKh4R3s60Tp2tI2KiJoNIorJ5KKW6an4lSKO7dKsUeMlXePmW2+fblrfo6wYBjnuaNnqy2NSUflLHyiqnhVnizGBXJJZs6UU3XqIQtKkrMnHqWt+x3SifG2N5/lk6sm5alx4RFmrVf8JPVfVdKKSg+cl80lpObq/uZoKeoqyV4+IuipRvjbzuf7s2HqQHIwohfcwN86Sdk3/w3zmohxpiahjT6Zdo6R1/AGXJ2osOkWNz0WI+stKGIrZiYoya+Xog9xxwE/M7ETp1WPlvyWB2YmaKyKKiYhiIqKYiCgmTlFy7cfCd+1HLpI18V4kk6uJBWrucAAXzquJCBpgEUXYnyGCucOBKQlpiJL4I6JYIToDBc+2NSYumJQAAAAASUVORK5CYII=" InformativeScreenshot="8003d4a6f6ed4640a9ea4de583097b87.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+                <Sequence sap2010:Annotation.AnnotationText="Test Zones" DisplayName="Zone Testing" sap:VirtualizedContainerService.HintSize="538,1269" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="ZoneName" />
+                    <Variable x:TypeArguments="x:String" Name="ZoneDescription" />
+                    <Variable x:TypeArguments="sd:DataTable" Name="ZonesDatatable" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ReadRange AddHeaders="True" DisplayName="Read Connected Office Test Data.xlsx" sap:VirtualizedContainerService.HintSize="476,97" sap2010:WorkflowViewState.IdRef="ReadRange_1" PreserveFormat="True" SheetName="Zone" WorkbookPath="Data\Connected Office Test Data.xlsx">
+                    <ui:ReadRange.DataTable>
+                      <OutArgument x:TypeArguments="sd:DataTable">
+                        <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">ZonesDatatable</CSharpReference>
+                      </OutArgument>
+                    </ui:ReadRange.DataTable>
+                    <ui:ReadRange.Range>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ui:ReadRange.Range>
+                  </ui:ReadRange>
+                  <uix:NClick sap2010:Annotation.AnnotationText="Navigate to Zones" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="476,92" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="102f6ef6-95c7-415c-bf8d-e153a54ab719" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="476,847" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="442,722" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="400,70" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">ZoneName</CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">row.ItemArray[1].ToString()</CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="400,70" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">
+                                <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">ZoneDescription</CSharpReference>
+                              </OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">row.ItemArray[2].ToString()</CSharpValue>
+                              </InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Sequence sap2010:Annotation.AnnotationText="Create a new Zone" DisplayName="Create a new Zone" sap:VirtualizedContainerService.HintSize="400,121" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Add Zone' button" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Add Zone' image button" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="450, 244, 30, 30" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='              ' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='              ' tag='IMG' type='' class='' /&gt;" Guid="9f7ecb87-f935-4f41-b54e-a793a3687e01" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASZSURBVFhH1ZZZK3ZRFMcNmck8D7kgFPdS5BMoLlygECFjRPgOuETm4Ur5EC6kXIgokpAyZShxY15vv/3u8zg85znPodT7/mvXae991v7vtf5r7eUj/wj+PyKvr69yeXkpy8vL0tTUJAUFBRIRESF+fn5qhIeHS35+vjQ2NsrS0pJcXFyof5zCK5Hn52fZ39+XgYEBSU5OFh8fH3VwQECABAUFSXBwsBp8M8ear6+vJCYmSm9vr+zt7cnT05O25hkeiby/v8vt7a3Mz89LZmamMs6BHFBYWKi8MjQ0JIuLi2qMjIxIS0uLFBUVSVJSktrLPxkZGTI1NSU3NzfKpidYEnl7e5OTkxPp6upSNwwMDJSsrCzp6OiQjY0NW4OsbW1tSXd3t2RnZytPYaO1tVWOj4+VbSu4EcEQJJqbm9WNIiMjpaysTFZWVvQO51hdXZXy8nKJiopSturr6+Xo6MjyIm5ECAee4MfY2Fjp7OyUu7s7vfp93N/fK+/Ex8crm4Tv+vpar37gExFENTc3p1yJJyDx+PioV38O7Pb09CjPYHtiYsJNwJ+IkB0IE00QDm+eID1J0/Pzc3l5edGz1sAzFRUVSjPp6emyu7urV/7CRQSjpCjuQ5hONHFwcCD9/f3S19enLuENa2trkpOTo7yCt811xkWEYkWdIO3IDieYnZ1VsY+Li5Pp6Wk9aw9Ih4SESEJCgvKkARcRKibFijpBijoBhyPo6OhomZyc1LP22N7eVhfG8wsLC3rWRIQChcsoVnZ1woyfEMF2SUmJOqumpkbPmojwdlCiIeQUPyECSGfOysvL0zMmIjxgKJqy/RWICmGiCQ43Rl1dnYSFhUloaKjU1tZ+WmMvArbKprGxMXUW/xpwEcFVCJV34ytIUbIDYeIBY/DiEmsG3+Y19lI7zs7OtJUPoEfO8vf31zMOiaBu1E52xMTEuAY3MojwbV5jLxX69PRUW/mAQYQzDbiFZnh4WM98APfi5pmZGfWSGoNwmENjXmMvRYs24ivGx8c9h4amBgHx2DkFWiAM3xUrIeOs3NxcPWMiQmeFq+gnfjt9S0tL1VlVVVV61kSE9o5Y09Rsbm7qWXv8hMjOzo6kpKSos3hgDbiIkBlUVUREnjsBOjAyCVJOwHtGiUfMZiG7iFAr6DFhSmdFU+MNCJh4kx1fX1MrrK+vK10Qlvb2dutHD9Do0mOiaDornm47kE3UCW5mlR1mPDw8SGVlpbKdlpamQmTW4iciNCukHoxpYgiRkw7cG7BBHUJL2B4dHbVvjADdNo0uITKqozfP2AFPQAL9YbOhoUGurq7cMtONCBvotml0+RHP0FnR1HwXaIJw4AlsVVdXy+HhoWUn70YEsJFum0YXVxJXOituRj9hV2dYI/6Dg4PqdeVfbOAJTySAJRGAQbptGl0EjDHSjqamuLhY6YdXlHeDQdkmjBQr6gR7+Sc1NVVpgnB4IgE8EjGAqEhNUpT2DhdzACWa21J3GHwzxxp7qBNtbW3KO9iw8yLwSsQAOc8rTHtHZ4XbebR4yjmcb8JH2aZiktL8442AAcdEfhv/CBGRPxsE59eMBi8zAAAAAElFTkSuQmCC" InformativeScreenshot="2dedc7c12d6a94b76b3fb271e7d19fa8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 344, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneName'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="5c5aff4d-c7ac-4c2b-a3c7-d0f577c226fd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="acab8694ca61f2cd6d32292b87f37c77.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="330, 312, 83, 24" ElementType="Text" FriendlyName="'Zone Name'" FullSelectorArgument="&lt;webctrl aaname='Zone Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Name' tag='LABEL' type='' class='control-label' check:innerText='Zone Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAcCAYAAAAUVyPDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVGhD7ZZdbsIwDIB3lT3sYcdCPHCSPsBNkHoUEMdAgkNk+XEa27HbbmAxJH9SH5Y6jvPFDfsIjhku1xCXa4jLNcTlGuJyDXG5hrhcQ1yuIUjuPRy33+HzS3sO4QyRr+MShrlaTod/UmdhuXOvY9jEDQ0n+PulVLnx2V9gDPFecqGbpY28hCJ3GJUDfye5t3GnFIs6KD+7cLzCq0w5lM14D+c9ituO4QYRFfK+y8MBuVGqWJsgt8S1NVJNE/mrjGueymGVGJifc7ExDHzRU4zQgLpc7TqAcVIkFNJi2/3dxooYPC+LxUXlPHOCm1zxq+rkxnj8nu+pCpoOHf3u8LEuD65TiIkocqEzWXCiEwLQcXmx3EW16Fwg74gyjxwcAcuNcFlC51JY/k5SRDpgljfttatRWFuUWz5VqchSXOtGRErOTpsXQOTmYtI6/bNaboRcD8IGp0aR8qtyWQ4yBo3DcpaHzuvl5kTap/lkuVP8Wnq502bTV8LE1Pu2xbO6HpArOmAwuaV4vXN+dy3MypU2togkN1Kvh/xfBJVAa3iGXN0Bh8jNk5a6CTZCis6L4yJXyIUYvt55zzZGUORGapfOSagxj8otf7M6Yq6B7bfJhQn6g5KDYPFdZo3cBAhGufgcii635cK1lPiW+0Lr+qvcROeLO1B+0Jzn4HINcbmGuFxDXK4hLtcQl2uIyzUjhB+soca0v7Xs0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">ZoneName</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneDescription'" FullSelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' type='text' class='form-control' aaname='Zone Description' /&gt;" Guid="27df0890-784e-42ca-8296-12e924f99e7f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="5cef430d4132790efebc3612d9736e19.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="330, 398, 121, 24" ElementType="Text" FriendlyName="'Zone Description'" FullSelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' type='' class='control-label' check:innerText='Zone Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAcCAYAAABMKLDaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVGhD7ZZRTsMwDIa5Cg887FgTD5xkD+MmSD0K046BBIcIie0utuOkLQswiD+pD7Sp+9tfFnEXnOFw6QPi0gfEpQ+ISx8Qlz4gLn1AXPqAuPRufISXx124P57p7yt4m8L+YRcOr/R3Z5h0Ch0/Zl/P4UQrf49zOJjZnsLLGy35Nf6k9ArfHGAbKL3I8vqM8nsM/KeB7D/7g1qQ3nH3dqEiPXFTm3MDtyb9fXqqBNLHrD5ecbPsp49wOrJ1j1N4pxUz4vniMd2QHoFaaoM269NGuTxX+bB/9nyuPYuaTxh4L/eM5L9lnTxPmY09g1x6Fv1mXpde++XQ/dxchJrPa+mEEPcwNH+vkAR1WuLb0mG4rMl2fV0rZj6qd8WGj+uFdFW7Ij2tK3rmdaEW/05ES+8480RFOi7Wv5pEMUhC3qcAap2QAo2oZovBadrSYRBr6+vBclrPEmLzzOjs9gyKHlZI7zZzwpRe7MYLWNgcOh94MQBEBKCdal1flb61PvYZLz1Q0YuBJaoivexF3bdqCekdZ06U0iFEbZd3DCDWr6UtPUkUw1xVH7MK+Uvvwoz+jXQcahk0s+WoaQZYOkJNGtL18LbW5+8vvXuNdF17UXrHmRNCOhRp7fAEBFLFITgf0poAuEZ/73TUw+TY0iF3IWmhfuzjUPSQv401eZb4bX4SrJSeTpCc18hkbTB9r9vMkSwdimBI+2JNUgjzGbA2QB7MfOl3JCidr4fL+BUgjfqLPczi83WRt0H6fjrLDEpAIn+HalY3Aqvz5ZlX/pFzemBLuAVc+rfh0gfEpQ+IS3duCJc+IC59QFz6cITwCTzBXqPL5OmlAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">ZoneDescription</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 484, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Create'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="7451368e-f19f-4598-904a-65a7cd3850df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVGhD7Zq/bsIwEIf7GFXpU/UNKnXp0D4EW1+EqWLvWMTA2jUD6gYbYoCF4eozsXO2z+BDjhDN/aRvSeL8+XxnZfAdaERRYcIEwn5+N/D0MYPHlyncP38OGnSALtAJjReGJ/Cih9cvGL19w+h9NmyMA3SBTqg0LwxtWlnc4AGDTtCNixeGJrWyGIwTdOPihWHfsgMU68ZFhRWgwoSoMCEqTIgKE6LChKgwISpMiAoT0puwybq9GUmz4K+9JeoLm25ga+6xbZbh8cUuPVadFTTm2X1OTGVh/b/waW5M2Lg5AOw3MGbOUWy7rle+bWnlha18gPmUjj0K6bKDiTtnKjhOJy4aV/COOSoKW8J8z7Qig5MSV4IT6Y9ZCZ20cbMLBNrrg4/nKiw9lo4rp7qwknZgX9iufaRiLGcmwQqlY1I5turpJCD2WXH1lnG9Cos/gmkpF3pPKyDIaWH2WWyuLiwjgiEr7GSbtOsQvaagwvBZJZNYSlVh8ZqTgxV2rk0SOdyxTEteuF5x1BVmcC2TrGXm49xM85V4bOn44ybrVkgitK24QBizLLD/hWZsQSdwVBdmaV8yTPdh+dZtpZHk1y9zv2zVHeMnLXmfy9YvpB9h/xgVJkSFCVFhQlSYEBUmRIUJUWFCVJgQVphud8qQ2+6kG+p4shvqdMtmhHGALtAJu2UTgyfQJl6EfTtk0AG6oLIwgTDN+agwUQD+AJsckLZ8QHSNAAAAAElFTkSuQmCC" InformativeScreenshot="6924513a800b306e5a57b84a41897747.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Back to List'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Details/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="428, 425, 80, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Back to List'" FullSelectorArgument="&lt;webctrl aaname='Back to List' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='' check:innerText='Back to List' /&gt;" Guid="e516cbca-ad60-446e-9334-40bae13d0a53" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAZCAYAAACvrQlzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHhSURBVGhD7ZUxkoMwDABvJl/kDXkGXR7BB/IC/kCXMjNpKNIwKfMCn5FlkG3ZYE53uUI7Q4Exkryy4csooqhQYVSoMCpUGBUqjAoVRoUK87dCp6dpzg9znfD+PwG13c3lhvcHCYQO3d2cbFB6Nf0bnwrwYaFT/zCn9mnY9L8mtHvhnUUoycIBoUUJlcjFeplLxktZqGUeE9ulKvRtrm0s1AVbPwujGfDJwm0kz+3lF5EI9bGYGJibjQPEdWw3avvIhzHiTyAIjNfmx5GiUK6AqR/TpGQOvBMUZsV0nFAUFp2IGFYCxIkajQstfZ5qhCZzbfw1ds0OReucfRZYiN9h+UTAUjTKzC2OwElIT5IjN+6pEVqOVSM0CMLvIiiMSF+EQlHc8UWw6GanzJlUgquJbdrc3ELcGqHufl4bGVs4LNTC7MCgKPp8l1B7VNu5IYV5hI8J9cD6YrFSQgO5SDC298hjrh1SOQm545gb9xwSCrgmrt9sqSOfJMUdS8RA0cEcG4P9Ke2UyjUR4nA/pZwQR43QoaM5Y6Hx/crmTyl+yQnzz21SZsHhHBIjaQg2zM7J7moyJ5CBUtc8G42xxHX5C3KzzV6vRB6sm7yPBEKVn6NChVGhwqhQYVSoMCpUFGO+AdGYQaAywmaoAAAAAElFTkSuQmCC" InformativeScreenshot="61af70c17a9ad13ba2cd0b8036660338.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zone Details - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                          <Sequence sap2010:Annotation.AnnotationText="Edit and Update a Zone" DisplayName="Update an existing Zone" sap:VirtualizedContainerService.HintSize="400,121" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick sap2010:Annotation.AnnotationText="Edit Zone" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="338,197" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="1563, 377, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='                                              ' /&gt;" Guid="e1574dd6-7ce2-4cd0-aae3-5eb209997589" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIvSURBVEhLzZRNi3FhHMaZTJosJBsvS0qz5gPMBxgJsxsly6mJElJsZqFkbaG8lJUsRCkvGwux9AUmC0XKwstMFmbI9fS/n8PMOcPEeVLPVUpH9/X7379zuyW4cP5vwHa7xWKxwGQyYd8PRTSACl9fX/H4+AiLxYJms4nNZsP9+hXRgOVyCZ/PB4VCAY1GA6PRiFKp9AMiCvD29oZGo4FyuYy7uzu0Wi3c3t4ySL1e5+k6C0ALR6MRK1WpVCgWi8hkMnh4eEClUsH19TUcDgfm8zm34gzAzjkVyGQySCQSGAwGFAoFpNNpmEwmpiqVSuHj44NbdQaAJqdyuVzOyqVS6R5CO6lWq8hms3h/f+dW/M1JAHJOWmjyq6srRKNRpoYA9FGr1RgMBvj8/ORWfOVXwHfnVHRzc4NQKIThcIj7+3v2TKlUMtixHAUInVO53+9Ht9uFzWZj5VqtFslkEqvVilv1M0cB352TlmAwyMqdTic7LTQ5lQudC3MQIHQeiUSYFpqcyukZaflt8l1+AMbjMc95IBBg5Var9STnwvAA6/WaqdDpdEzN8/MzOp3OWc6F4QFoUrfbjXw+D7PZjJeXF9jt9rOcC8MDtNttdlJmsxl6vR6D7N7Dqc6F2QPoWOZyOcTjcUynU3aKEokE9Ho9+4eKzR5A16/X64XL5UI4HIbH48HT0xO7McVMvsseQG5jsRjbQa1WQ7/f511aYsNTRLs4dJ/8S3gv+RK5MAD4A0Gy5/kEaaJTAAAAAElFTkSuQmCC" InformativeScreenshot="6ed640b8ad506de35d8eb90deaf9d80d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">ZoneName</CSharpReference>
+                                </OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">ZoneName + " 2"</CSharpValue>
+                                </InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">ZoneDescription</CSharpReference>
+                                </OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">ZoneDescription + " 2"</CSharpValue>
+                                </InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 344, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'sds'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="e17143bd-c59f-4b92-82c3-e94222ede196" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVHhe7ds9ThtBGIDhXC8dXe5BkY5jILnyJUzDJSIXFkUQBQVCFkKiAdGsJv68P+wuthPJgyLvPI/0Fevdqd/ZH39LAEBRxB8ACjOI/+vbe7q7f0jLm9v0a/XbGGOMMSc80fPoevS9r4t/nIiLnp5fUlVVza8AwKmKnkfXo+/9DUAX/9gZxAUAwLRE36PzrS7+sStwxw8A0xN9j863uvjHuwEAYJr6nRd/ACiA+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDDiDwCFEX8AKMz/jf/6Op2fXaTFujkGAL6c+ANAYcQfAAoj/gBQmMzxX6fFzx/p+1k7w7A/Xl0Mzy3H8T+8HgA4Xtb4L2ebYM9WzVHEft7Fuw7/PC3rw41VuhwF/tB6ACCPjPGv79rPr3bVug795Uf5a4PH/ofWAwC5ZL3zT8t587i+f4e/sY386Lcwfue/bz0AkE3e+Dc+3u03Ef/X+Dc+rQcAsvmS+Nd6j/q3kd/x2H97p7/vo749rwoAgKNkjP86LWbX6bE5Gsd7+zHf4E5+/MHf4fUAQB554z/4m97ncNcbgHY2G4HBY/+/rwcAjpcx/gDAKRB/ACiM+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDA747+8uU1VVTVHAMBURN+j860u/nf3D+np+aU5AgCmIvoenW918X99e9/uCuICTwAA4PRFz6Pr0ffofKuLf4gTsTOIi+LdgDHGGGNOd6Ln0fV++MMg/gDA9Ik/ABQlpT8MA29y0KyQjwAAAABJRU5ErkJggg==" InformativeScreenshot="35432221d3dd8a4c58ab7ea9b28cfb47.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="330, 312, 83, 24" ElementType="Text" FriendlyName="'Zone Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Zone Name' check:innerText='Zone Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAcCAYAAAAUVyPDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVGhD7ZZdbsIwDIB3lT3sYcdCPHCSPsBNkHoUEMdAgkNk+XEa27HbbmAxJH9SH5Y6jvPFDfsIjhku1xCXa4jLNcTlGuJyDXG5hrhcQ1yuIUjuPRy33+HzS3sO4QyRr+MShrlaTod/UmdhuXOvY9jEDQ0n+PulVLnx2V9gDPFecqGbpY28hCJ3GJUDfye5t3GnFIs6KD+7cLzCq0w5lM14D+c9ituO4QYRFfK+y8MBuVGqWJsgt8S1NVJNE/mrjGueymGVGJifc7ExDHzRU4zQgLpc7TqAcVIkFNJi2/3dxooYPC+LxUXlPHOCm1zxq+rkxnj8nu+pCpoOHf3u8LEuD65TiIkocqEzWXCiEwLQcXmx3EW16Fwg74gyjxwcAcuNcFlC51JY/k5SRDpgljfttatRWFuUWz5VqchSXOtGRErOTpsXQOTmYtI6/bNaboRcD8IGp0aR8qtyWQ4yBo3DcpaHzuvl5kTap/lkuVP8Wnq502bTV8LE1Pu2xbO6HpArOmAwuaV4vXN+dy3MypU2togkN1Kvh/xfBJVAa3iGXN0Bh8jNk5a6CTZCis6L4yJXyIUYvt55zzZGUORGapfOSagxj8otf7M6Yq6B7bfJhQn6g5KDYPFdZo3cBAhGufgcii635cK1lPiW+0Lr+qvcROeLO1B+0Jzn4HINcbmGuFxDXK4hLtcQl2uIyzUjhB+soca0v7Xs0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">ZoneName</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'sds'" FullSelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' type='text' class='form-control' aaname='Zone Description' /&gt;" Guid="0e0102cc-fba6-4258-bf81-3ab2c5959cbe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVHhe7ds9ThtBGIDhXC8dXe5BkY5jILnyJUzDJSIXFkUQBQVCFkKiAdGsJv68P+wuthPJgyLvPI/0Fevdqd/ZH39LAEBRxB8ACjOI/+vbe7q7f0jLm9v0a/XbGGOMMSc80fPoevS9r4t/nIiLnp5fUlVVza8AwKmKnkfXo+/9DUAX/9gZxAUAwLRE36PzrS7+sStwxw8A0xN9j863uvjHuwEAYJr6nRd/ACiA+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDDiDwCFEX8AKMz/jf/6Op2fXaTFujkGAL6c+ANAYcQfAAoj/gBQmMzxX6fFzx/p+1k7w7A/Xl0Mzy3H8T+8HgA4Xtb4L2ebYM9WzVHEft7Fuw7/PC3rw41VuhwF/tB6ACCPjPGv79rPr3bVug795Uf5a4PH/ofWAwC5ZL3zT8t587i+f4e/sY386Lcwfue/bz0AkE3e+Dc+3u03Ef/X+Dc+rQcAsvmS+Nd6j/q3kd/x2H97p7/vo749rwoAgKNkjP86LWbX6bE5Gsd7+zHf4E5+/MHf4fUAQB554z/4m97ncNcbgHY2G4HBY/+/rwcAjpcx/gDAKRB/ACiM+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDA747+8uU1VVTVHAMBURN+j860u/nf3D+np+aU5AgCmIvoenW918X99e9/uCuICTwAA4PRFz6Pr0ffofKuLf4gTsTOIi+LdgDHGGGNOd6Ln0fV++MMg/gDA9Ik/ABQlpT8MA29y0KyQjwAAAABJRU5ErkJggg==" InformativeScreenshot="9b9fd12cc15a88cf302fb093b1d7b035.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="330, 398, 121, 24" ElementType="Text" FriendlyName="'Zone Description'" FullSelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' type='' class='control-label' check:innerText='Zone Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAcCAYAAABMKLDaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVGhD7ZZRTsMwDIa5Cg887FgTD5xkD+MmSD0K046BBIcIie0utuOkLQswiD+pD7Sp+9tfFnEXnOFw6QPi0gfEpQ+ISx8Qlz4gLn1AXPqAuPRufISXx124P57p7yt4m8L+YRcOr/R3Z5h0Ch0/Zl/P4UQrf49zOJjZnsLLGy35Nf6k9ArfHGAbKL3I8vqM8nsM/KeB7D/7g1qQ3nH3dqEiPXFTm3MDtyb9fXqqBNLHrD5ecbPsp49wOrJ1j1N4pxUz4vniMd2QHoFaaoM269NGuTxX+bB/9nyuPYuaTxh4L/eM5L9lnTxPmY09g1x6Fv1mXpde++XQ/dxchJrPa+mEEPcwNH+vkAR1WuLb0mG4rMl2fV0rZj6qd8WGj+uFdFW7Ij2tK3rmdaEW/05ES+8480RFOi7Wv5pEMUhC3qcAap2QAo2oZovBadrSYRBr6+vBclrPEmLzzOjs9gyKHlZI7zZzwpRe7MYLWNgcOh94MQBEBKCdal1flb61PvYZLz1Q0YuBJaoivexF3bdqCekdZ06U0iFEbZd3DCDWr6UtPUkUw1xVH7MK+Uvvwoz+jXQcahk0s+WoaQZYOkJNGtL18LbW5+8vvXuNdF17UXrHmRNCOhRp7fAEBFLFITgf0poAuEZ/73TUw+TY0iF3IWmhfuzjUPSQv401eZb4bX4SrJSeTpCc18hkbTB9r9vMkSwdimBI+2JNUgjzGbA2QB7MfOl3JCidr4fL+BUgjfqLPczi83WRt0H6fjrLDEpAIn+HalY3Aqvz5ZlX/pFzemBLuAVc+rfh0gfEpQ+IS3duCJc+IC59QFz6cITwCTzBXqPL5OmlAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">ZoneDescription</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
+                            <uix:NClick ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 484, 59, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Save' check:text='Save' /&gt;" Guid="7e00905c-dc0e-45a6-b789-87a5f274015c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAqCAYAAAAERIP3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHUSURBVGhD7ZqxTsMwEIZ5DER5Kt4AiYUBHqIbL9IJZWek6tCVNUPF1m5VhnbpcPh3bPfsXKGirij2/dI/JD6n+f6zk6G5ooql8F4fn2u6e5nS7UND1/evxRg84AIfV4DHAIpuHt9o9PROo+dpOTY84AIfDyDAIxkLLk0uxOADp1eARyrFdTy14QOnV4DH3hAnFGZweik8pPBCcWlWeCeFhxReKC7NCu+k8NBJ8M2aOncdr65dyLV/7Lzw842ZvaNZw86ZMNoa4Cery+2y5OzwtF3TWBgLTrdFqF/QbCuFt6TWlLXz+Djop9/7xlnh9ze2oYk4joD4WA9Mq6U9Hre7AUx8Lg3iyMAPODN8b3tDVodD8I7g7Krgz4x4NdhaF1TwYM7xPgu8tw+Bd4qfD2Kdw1hY+hZsH+BgXtAFwsPDzhqx7g2WOt4Y7jjtdBRMBp8dvn/99d0bgIrnsK/RyX7J81UjzT/FWeHjhxkcP9B4EPbYrwQhkM5cq0tBXX3cfRNW+hw40pnh3QWY0mUa1Ri4idRNETIe2+t3+x3OCv/frPBOCg8pvFBcmhXeSeEhhReKS7MIX/Vf1FV/nFD1ZykQBpAMirA3SjF4wMXBoQi+NlUMT/QFy6cVLZeRgsYAAAAASUVORK5CYII=" InformativeScreenshot="6c800d14b0c1295075ac901a4a9c6e31.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                          <Sequence DisplayName="Delete a Zone" sap:VirtualizedContainerService.HintSize="400,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Navigate to 'Zones'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="e19287c8-78b9-4dc0-a1a3-d20a0b5bb3f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click the 'Delete' Image Button" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="1819, 377, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='IMG' aaname='                                              ' /&gt;" Guid="043f9a58-3bed-4f41-9b5a-39289f389d0e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANTSURBVEhLxZVLKLVRFIbPOe4SuUcuuecUxYSJAeWSCXXORJlIuSRFJE6UkImQkZQJUwYmInKdiOOUobEJJZH7/dW7fHv3ff6f0a9/1arzbevdz9prr7XZ8Mv2fwHv7+/Y2tpCSUkJ/P39Ybfbxfm7qKgI6+vrEvOT/Qg4PT1FdXU1wsLCsLCwgL29PfGlpSVERESgvLwcJycnRvTfTQOqqqqQkZGB9PR07cnJyQgODpaM09LSLB4QEICgoCAkJSVZNJmZmSgrKzN2NQHW1tYwOzv7T3x5ednY1QS4vb2Fx+OB0+lEdna2OLNRztN95yomNzcX3d3duLm5MXY1AS4vL1FbWwubzSbOy2R5HA6H/mZJ6PzNNf6NMX5+flpXWVmJi4sLY1cT4Pr6GvX19TqwuLgY5+fncLvdsiEvlRe9urqKqKgoiWFCjOFlKx3jr66ujF2/lKilpUUHlpaWSgs2NzdLptHR0djY2MD+/j5iY2MF2tjYKDE1NTVa19DQIMkq04D7+3upnwrkCShua2vTgM3NTRwcHGhAU1OTaCsqKrSuvb0dd3d3sk7TgMfHRwwMDOjAvLw8vL29iYA1JoBD5/V6BUAoT0fjICpdb28vHh4eZJ2mAc/PzxgdHdWB7GkCOjo6/gDExcUJoLW1VbSFhYVaNzQ0hKenJ1mnacDr6ysmJyd1YGpqqqx1dXXJoBGwvb1tAbB8NLa20o2Pj+Pl5UXWaRrAbGdmZmQzBWBgT0+PBXB4eCgAnorlo7H/qeF0T09PS2LKNIAXOj8/j9DQUA1g2fr7+xEYGIiYmBjs7OxoAKGdnZ2izcnJEU1ISAjm5uYsD6AG0BYXF6XfFYC1HBkZkeEiYHd3Fz6fTwDMtq+vT3ScemrCw8NlVr4FrKysID4+XgPYWWNjY5KZOoEC8FSDg4Oiy8rKEg27y/wO0SwAZsjuYTBfUr4pU1NTUravd8Angl1H43tETUpKigyj2SwAZpefny/BiYmJ8tZPTEzICSIjIyU7Qghj2YaHh+Wp4MbU8C74/8JsFsDx8bFMMIM5qQkJCVIa9c3MWUL+5hrfJK6p74KCAhwdHRm7fZoFwFewrq5OLpB9roQ/OWMYS43L5cLZ2Zmx26dZAL9hvwwAPgDyxCXzJWsuDAAAAABJRU5ErkJggg==" InformativeScreenshot="8302691211e81e245951f4206bb7679a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="'Delete' the Zone" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Delete/6f7e05cc-b72b-4209-a12f-0d281a0ea70a" DesignTimeRectangle="330, 466, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-danger' aaname='Delete' check:text='Delete' /&gt;" Guid="6af11ebf-693b-4040-96fa-94577b46d323" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVGhD7ZpBasMwEEV7phZ6gBZ6kx6gB8k+18gmlwhkGepVSJdZhYRQsghTaWyrkjy2NCZVCv4DD2Jrxo6epVnpgRCqgDBlBMK+NxV9vX9Q9fxGn48vk8Y6sC6sEz+cMDtgk6qnV+BjnPjSnDBeWVIBYDdtOGFYXQMYN204YbxvpWTAbtqAsAwgTAmEKYEwJRCmBMKUQJgSCFPyj4XN6Xwkuq7mwtj9uK2w2ZquzTPC2NFByh9kMsJOdJ6F9/erEz9XN/kRwhY785YxHyefIsIYnkzPmMjUhYkClnRp3slxXNN+ZP5h29xz4Ysbeo+OgsKaSW2XzXU9icsiGneTiYWl8g3iCsuoU1BUGPeyRpj/2xHUh8LS+QZBWFadgrutMP4thiwsnW8QhGXVKSgorBbQbg07kbA/xXSFDecbeoQl6xQUE8Zbw+sb8XUXYUum+k7flhzZryQKCKsn3mnGnBt/fdOgXb8JhaXz25zo/Tl1Cv5AWDfCPzuU7082EpbMr/ntWd4HyqjL5bbCJgCEKYEwJRCmBMKUQJgSCFMCYUogTIkoDMedBpCOO+FAXT/igToc2ezBOBGPbNqwA7zSTJLdt1PGOrAufFk2AmGIdECYKoh+AKBe9P7dz3BKAAAAAElFTkSuQmCC" InformativeScreenshot="bb1088045632e07851ad5ff40eaf31e4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Delete Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <ui:ForEachRow.DataTable>
+                      <InArgument x:TypeArguments="sd:DataTable">
+                        <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">ZonesDatatable</CSharpValue>
+                      </InArgument>
+                    </ui:ForEachRow.DataTable>
+                  </ui:ForEachRow>
+                </Sequence>
+                <Sequence sap2010:Annotation.AnnotationText="Test Zones" DisplayName="Zone Testing" sap:VirtualizedContainerService.HintSize="538,121" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="ZoneName" />
+                    <Variable x:TypeArguments="x:String" Name="ZoneDescription" />
+                    <Variable x:TypeArguments="sd:DataTable" Name="ZonesDatatable" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick sap2010:Annotation.AnnotationText="Navigate to Zones" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="400,92" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="102f6ef6-95c7-415c-bf8d-e153a54ab719" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="400,71" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">ZoneName</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">New Zone Name</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="400,71" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">ZoneDescription</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">New Zone Description</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Sequence sap2010:Annotation.AnnotationText="Create a new Zone" DisplayName="Create a new Zone" sap:VirtualizedContainerService.HintSize="400,1193" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Add Zone' button" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Add Zone' image button" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="450, 244, 30, 30" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='              ' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='              ' tag='IMG' type='' class='' /&gt;" Guid="9f7ecb87-f935-4f41-b54e-a793a3687e01" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASZSURBVFhH1ZZZK3ZRFMcNmck8D7kgFPdS5BMoLlygECFjRPgOuETm4Ur5EC6kXIgokpAyZShxY15vv/3u8zg85znPodT7/mvXae991v7vtf5r7eUj/wj+PyKvr69yeXkpy8vL0tTUJAUFBRIRESF+fn5qhIeHS35+vjQ2NsrS0pJcXFyof5zCK5Hn52fZ39+XgYEBSU5OFh8fH3VwQECABAUFSXBwsBp8M8ear6+vJCYmSm9vr+zt7cnT05O25hkeiby/v8vt7a3Mz89LZmamMs6BHFBYWKi8MjQ0JIuLi2qMjIxIS0uLFBUVSVJSktrLPxkZGTI1NSU3NzfKpidYEnl7e5OTkxPp6upSNwwMDJSsrCzp6OiQjY0NW4OsbW1tSXd3t2RnZytPYaO1tVWOj4+VbSu4EcEQJJqbm9WNIiMjpaysTFZWVvQO51hdXZXy8nKJiopSturr6+Xo6MjyIm5ECAee4MfY2Fjp7OyUu7s7vfp93N/fK+/Ex8crm4Tv+vpar37gExFENTc3p1yJJyDx+PioV38O7Pb09CjPYHtiYsJNwJ+IkB0IE00QDm+eID1J0/Pzc3l5edGz1sAzFRUVSjPp6emyu7urV/7CRQSjpCjuQ5hONHFwcCD9/f3S19enLuENa2trkpOTo7yCt811xkWEYkWdIO3IDieYnZ1VsY+Li5Pp6Wk9aw9Ih4SESEJCgvKkARcRKibFijpBijoBhyPo6OhomZyc1LP22N7eVhfG8wsLC3rWRIQChcsoVnZ1woyfEMF2SUmJOqumpkbPmojwdlCiIeQUPyECSGfOysvL0zMmIjxgKJqy/RWICmGiCQ43Rl1dnYSFhUloaKjU1tZ+WmMvArbKprGxMXUW/xpwEcFVCJV34ytIUbIDYeIBY/DiEmsG3+Y19lI7zs7OtJUPoEfO8vf31zMOiaBu1E52xMTEuAY3MojwbV5jLxX69PRUW/mAQYQzDbiFZnh4WM98APfi5pmZGfWSGoNwmENjXmMvRYs24ivGx8c9h4amBgHx2DkFWiAM3xUrIeOs3NxcPWMiQmeFq+gnfjt9S0tL1VlVVVV61kSE9o5Y09Rsbm7qWXv8hMjOzo6kpKSos3hgDbiIkBlUVUREnjsBOjAyCVJOwHtGiUfMZiG7iFAr6DFhSmdFU+MNCJh4kx1fX1MrrK+vK10Qlvb2dutHD9Do0mOiaDornm47kE3UCW5mlR1mPDw8SGVlpbKdlpamQmTW4iciNCukHoxpYgiRkw7cG7BBHUJL2B4dHbVvjADdNo0uITKqozfP2AFPQAL9YbOhoUGurq7cMtONCBvotml0+RHP0FnR1HwXaIJw4AlsVVdXy+HhoWUn70YEsJFum0YXVxJXOituRj9hV2dYI/6Dg4PqdeVfbOAJTySAJRGAQbptGl0EjDHSjqamuLhY6YdXlHeDQdkmjBQr6gR7+Sc1NVVpgnB4IgE8EjGAqEhNUpT2DhdzACWa21J3GHwzxxp7qBNtbW3KO9iw8yLwSsQAOc8rTHtHZ4XbebR4yjmcb8JH2aZiktL8442AAcdEfhv/CBGRPxsE59eMBi8zAAAAAElFTkSuQmCC" InformativeScreenshot="2dedc7c12d6a94b76b3fb271e7d19fa8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 344, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneName'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="5c5aff4d-c7ac-4c2b-a3c7-d0f577c226fd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="acab8694ca61f2cd6d32292b87f37c77.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="330, 312, 83, 24" ElementType="Text" FriendlyName="'Zone Name'" FullSelectorArgument="&lt;webctrl aaname='Zone Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Name' tag='LABEL' type='' class='control-label' check:innerText='Zone Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAcCAYAAAAUVyPDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVGhD7ZZdbsIwDIB3lT3sYcdCPHCSPsBNkHoUEMdAgkNk+XEa27HbbmAxJH9SH5Y6jvPFDfsIjhku1xCXa4jLNcTlGuJyDXG5hrhcQ1yuIUjuPRy33+HzS3sO4QyRr+MShrlaTod/UmdhuXOvY9jEDQ0n+PulVLnx2V9gDPFecqGbpY28hCJ3GJUDfye5t3GnFIs6KD+7cLzCq0w5lM14D+c9ituO4QYRFfK+y8MBuVGqWJsgt8S1NVJNE/mrjGueymGVGJifc7ExDHzRU4zQgLpc7TqAcVIkFNJi2/3dxooYPC+LxUXlPHOCm1zxq+rkxnj8nu+pCpoOHf3u8LEuD65TiIkocqEzWXCiEwLQcXmx3EW16Fwg74gyjxwcAcuNcFlC51JY/k5SRDpgljfttatRWFuUWz5VqchSXOtGRErOTpsXQOTmYtI6/bNaboRcD8IGp0aR8qtyWQ4yBo3DcpaHzuvl5kTap/lkuVP8Wnq502bTV8LE1Pu2xbO6HpArOmAwuaV4vXN+dy3MypU2togkN1Kvh/xfBJVAa3iGXN0Bh8jNk5a6CTZCis6L4yJXyIUYvt55zzZGUORGapfOSagxj8otf7M6Yq6B7bfJhQn6g5KDYPFdZo3cBAhGufgcii635cK1lPiW+0Lr+qvcROeLO1B+0Jzn4HINcbmGuFxDXK4hLtcQl2uIyzUjhB+soca0v7Xs0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">ZoneName</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneDescription'" FullSelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' type='text' class='form-control' aaname='Zone Description' /&gt;" Guid="27df0890-784e-42ca-8296-12e924f99e7f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="5cef430d4132790efebc3612d9736e19.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="330, 398, 121, 24" ElementType="Text" FriendlyName="'Zone Description'" FullSelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' type='' class='control-label' check:innerText='Zone Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAcCAYAAABMKLDaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVGhD7ZZRTsMwDIa5Cg887FgTD5xkD+MmSD0K046BBIcIie0utuOkLQswiD+pD7Sp+9tfFnEXnOFw6QPi0gfEpQ+ISx8Qlz4gLn1AXPqAuPRufISXx124P57p7yt4m8L+YRcOr/R3Z5h0Ch0/Zl/P4UQrf49zOJjZnsLLGy35Nf6k9ArfHGAbKL3I8vqM8nsM/KeB7D/7g1qQ3nH3dqEiPXFTm3MDtyb9fXqqBNLHrD5ecbPsp49wOrJ1j1N4pxUz4vniMd2QHoFaaoM269NGuTxX+bB/9nyuPYuaTxh4L/eM5L9lnTxPmY09g1x6Fv1mXpde++XQ/dxchJrPa+mEEPcwNH+vkAR1WuLb0mG4rMl2fV0rZj6qd8WGj+uFdFW7Ij2tK3rmdaEW/05ES+8480RFOi7Wv5pEMUhC3qcAap2QAo2oZovBadrSYRBr6+vBclrPEmLzzOjs9gyKHlZI7zZzwpRe7MYLWNgcOh94MQBEBKCdal1flb61PvYZLz1Q0YuBJaoivexF3bdqCekdZ06U0iFEbZd3DCDWr6UtPUkUw1xVH7MK+Uvvwoz+jXQcahk0s+WoaQZYOkJNGtL18LbW5+8vvXuNdF17UXrHmRNCOhRp7fAEBFLFITgf0poAuEZ/73TUw+TY0iF3IWmhfuzjUPSQv401eZb4bX4SrJSeTpCc18hkbTB9r9vMkSwdimBI+2JNUgjzGbA2QB7MfOl3JCidr4fL+BUgjfqLPczi83WRt0H6fjrLDEpAIn+HalY3Aqvz5ZlX/pFzemBLuAVc+rfh0gfEpQ+IS3duCJc+IC59QFz6cITwCTzBXqPL5OmlAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">ZoneDescription</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 484, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Create'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="7451368e-f19f-4598-904a-65a7cd3850df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVGhD7Zq/bsIwEIf7GFXpU/UNKnXp0D4EW1+EqWLvWMTA2jUD6gYbYoCF4eozsXO2z+BDjhDN/aRvSeL8+XxnZfAdaERRYcIEwn5+N/D0MYPHlyncP38OGnSALtAJjReGJ/Cih9cvGL19w+h9NmyMA3SBTqg0LwxtWlnc4AGDTtCNixeGJrWyGIwTdOPihWHfsgMU68ZFhRWgwoSoMCEqTIgKE6LChKgwISpMiAoT0puwybq9GUmz4K+9JeoLm25ga+6xbZbh8cUuPVadFTTm2X1OTGVh/b/waW5M2Lg5AOw3MGbOUWy7rle+bWnlha18gPmUjj0K6bKDiTtnKjhOJy4aV/COOSoKW8J8z7Qig5MSV4IT6Y9ZCZ20cbMLBNrrg4/nKiw9lo4rp7qwknZgX9iufaRiLGcmwQqlY1I5turpJCD2WXH1lnG9Cos/gmkpF3pPKyDIaWH2WWyuLiwjgiEr7GSbtOsQvaagwvBZJZNYSlVh8ZqTgxV2rk0SOdyxTEteuF5x1BVmcC2TrGXm49xM85V4bOn44ybrVkgitK24QBizLLD/hWZsQSdwVBdmaV8yTPdh+dZtpZHk1y9zv2zVHeMnLXmfy9YvpB9h/xgVJkSFCVFhQlSYEBUmRIUJUWFCVJgQVphud8qQ2+6kG+p4shvqdMtmhHGALtAJu2UTgyfQJl6EfTtk0AG6oLIwgTDN+agwUQD+AJsckLZ8QHSNAAAAAElFTkSuQmCC" InformativeScreenshot="6924513a800b306e5a57b84a41897747.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Back to List'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Details/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="428, 425, 80, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Back to List'" FullSelectorArgument="&lt;webctrl aaname='Back to List' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='' check:innerText='Back to List' /&gt;" Guid="e516cbca-ad60-446e-9334-40bae13d0a53" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAZCAYAAACvrQlzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHhSURBVGhD7ZUxkoMwDABvJl/kDXkGXR7BB/IC/kCXMjNpKNIwKfMCn5FlkG3ZYE53uUI7Q4Exkryy4csooqhQYVSoMCpUGBUqjAoVRoUK87dCp6dpzg9znfD+PwG13c3lhvcHCYQO3d2cbFB6Nf0bnwrwYaFT/zCn9mnY9L8mtHvhnUUoycIBoUUJlcjFeplLxktZqGUeE9ulKvRtrm0s1AVbPwujGfDJwm0kz+3lF5EI9bGYGJibjQPEdWw3avvIhzHiTyAIjNfmx5GiUK6AqR/TpGQOvBMUZsV0nFAUFp2IGFYCxIkajQstfZ5qhCZzbfw1ds0OReucfRZYiN9h+UTAUjTKzC2OwElIT5IjN+6pEVqOVSM0CMLvIiiMSF+EQlHc8UWw6GanzJlUgquJbdrc3ELcGqHufl4bGVs4LNTC7MCgKPp8l1B7VNu5IYV5hI8J9cD6YrFSQgO5SDC298hjrh1SOQm545gb9xwSCrgmrt9sqSOfJMUdS8RA0cEcG4P9Ke2UyjUR4nA/pZwQR43QoaM5Y6Hx/crmTyl+yQnzz21SZsHhHBIjaQg2zM7J7moyJ5CBUtc8G42xxHX5C3KzzV6vRB6sm7yPBEKVn6NChVGhwqhQYVSoMCpUFGO+AdGYQaAywmaoAAAAAElFTkSuQmCC" InformativeScreenshot="61af70c17a9ad13ba2cd0b8036660338.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zone Details - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                  <Sequence sap2010:Annotation.AnnotationText="Edit and Update a Zone" DisplayName="Update an existing Zone" sap:VirtualizedContainerService.HintSize="400,121" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick sap2010:Annotation.AnnotationText="Edit Zone" ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="338,197" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="1563, 377, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='                                              ' /&gt;" Guid="e1574dd6-7ce2-4cd0-aae3-5eb209997589" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIvSURBVEhLzZRNi3FhHMaZTJosJBsvS0qz5gPMBxgJsxsly6mJElJsZqFkbaG8lJUsRCkvGwux9AUmC0XKwstMFmbI9fS/n8PMOcPEeVLPVUpH9/X7379zuyW4cP5vwHa7xWKxwGQyYd8PRTSACl9fX/H4+AiLxYJms4nNZsP9+hXRgOVyCZ/PB4VCAY1GA6PRiFKp9AMiCvD29oZGo4FyuYy7uzu0Wi3c3t4ySL1e5+k6C0ALR6MRK1WpVCgWi8hkMnh4eEClUsH19TUcDgfm8zm34gzAzjkVyGQySCQSGAwGFAoFpNNpmEwmpiqVSuHj44NbdQaAJqdyuVzOyqVS6R5CO6lWq8hms3h/f+dW/M1JAHJOWmjyq6srRKNRpoYA9FGr1RgMBvj8/ORWfOVXwHfnVHRzc4NQKIThcIj7+3v2TKlUMtixHAUInVO53+9Ht9uFzWZj5VqtFslkEqvVilv1M0cB352TlmAwyMqdTic7LTQ5lQudC3MQIHQeiUSYFpqcyukZaflt8l1+AMbjMc95IBBg5Var9STnwvAA6/WaqdDpdEzN8/MzOp3OWc6F4QFoUrfbjXw+D7PZjJeXF9jt9rOcC8MDtNttdlJmsxl6vR6D7N7Dqc6F2QPoWOZyOcTjcUynU3aKEokE9Ho9+4eKzR5A16/X64XL5UI4HIbH48HT0xO7McVMvsseQG5jsRjbQa1WQ7/f511aYsNTRLs4dJ/8S3gv+RK5MAD4A0Gy5/kEaaJTAAAAAElFTkSuQmCC" InformativeScreenshot="6ed640b8ad506de35d8eb90deaf9d80d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">ZoneName</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">ZoneName + " 2"</CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_10">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">
+                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">ZoneDescription</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">ZoneDescription + " 2"</CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 344, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'sds'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="e17143bd-c59f-4b92-82c3-e94222ede196" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVHhe7ds9ThtBGIDhXC8dXe5BkY5jILnyJUzDJSIXFkUQBQVCFkKiAdGsJv68P+wuthPJgyLvPI/0Fevdqd/ZH39LAEBRxB8ACjOI/+vbe7q7f0jLm9v0a/XbGGOMMSc80fPoevS9r4t/nIiLnp5fUlVVza8AwKmKnkfXo+/9DUAX/9gZxAUAwLRE36PzrS7+sStwxw8A0xN9j863uvjHuwEAYJr6nRd/ACiA+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDDiDwCFEX8AKMz/jf/6Op2fXaTFujkGAL6c+ANAYcQfAAoj/gBQmMzxX6fFzx/p+1k7w7A/Xl0Mzy3H8T+8HgA4Xtb4L2ebYM9WzVHEft7Fuw7/PC3rw41VuhwF/tB6ACCPjPGv79rPr3bVug795Uf5a4PH/ofWAwC5ZL3zT8t587i+f4e/sY386Lcwfue/bz0AkE3e+Dc+3u03Ef/X+Dc+rQcAsvmS+Nd6j/q3kd/x2H97p7/vo749rwoAgKNkjP86LWbX6bE5Gsd7+zHf4E5+/MHf4fUAQB554z/4m97ncNcbgHY2G4HBY/+/rwcAjpcx/gDAKRB/ACiM+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDA747+8uU1VVTVHAMBURN+j860u/nf3D+np+aU5AgCmIvoenW918X99e9/uCuICTwAA4PRFz6Pr0ffofKuLf4gTsTOIi+LdgDHGGGNOd6Ln0fV++MMg/gDA9Ik/ABQlpT8MA29y0KyQjwAAAABJRU5ErkJggg==" InformativeScreenshot="35432221d3dd8a4c58ab7ea9b28cfb47.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="330, 312, 83, 24" ElementType="Text" FriendlyName="'Zone Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='Zone Name' check:innerText='Zone Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAcCAYAAAAUVyPDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVGhD7ZZdbsIwDIB3lT3sYcdCPHCSPsBNkHoUEMdAgkNk+XEa27HbbmAxJH9SH5Y6jvPFDfsIjhku1xCXa4jLNcTlGuJyDXG5hrhcQ1yuIUjuPRy33+HzS3sO4QyRr+MShrlaTod/UmdhuXOvY9jEDQ0n+PulVLnx2V9gDPFecqGbpY28hCJ3GJUDfye5t3GnFIs6KD+7cLzCq0w5lM14D+c9ituO4QYRFfK+y8MBuVGqWJsgt8S1NVJNE/mrjGueymGVGJifc7ExDHzRU4zQgLpc7TqAcVIkFNJi2/3dxooYPC+LxUXlPHOCm1zxq+rkxnj8nu+pCpoOHf3u8LEuD65TiIkocqEzWXCiEwLQcXmx3EW16Fwg74gyjxwcAcuNcFlC51JY/k5SRDpgljfttatRWFuUWz5VqchSXOtGRErOTpsXQOTmYtI6/bNaboRcD8IGp0aR8qtyWQ4yBo3DcpaHzuvl5kTap/lkuVP8Wnq502bTV8LE1Pu2xbO6HpArOmAwuaV4vXN+dy3MypU2togkN1Kvh/xfBJVAa3iGXN0Bh8jNk5a6CTZCis6L4yJXyIUYvt55zzZGUORGapfOSagxj8otf7M6Yq6B7bfJhQn6g5KDYPFdZo3cBAhGufgcii635cK1lPiW+0Lr+qvcROeLO1B+0Jzn4HINcbmGuFxDXK4hLtcQl2uIyzUjhB+soca0v7Xs0wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">ZoneName</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'sds'" FullSelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' type='text' class='form-control' aaname='Zone Description' /&gt;" Guid="0e0102cc-fba6-4258-bf81-3ab2c5959cbe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVHhe7ds9ThtBGIDhXC8dXe5BkY5jILnyJUzDJSIXFkUQBQVCFkKiAdGsJv68P+wuthPJgyLvPI/0Fevdqd/ZH39LAEBRxB8ACjOI/+vbe7q7f0jLm9v0a/XbGGOMMSc80fPoevS9r4t/nIiLnp5fUlVVza8AwKmKnkfXo+/9DUAX/9gZxAUAwLRE36PzrS7+sStwxw8A0xN9j863uvjHuwEAYJr6nRd/ACiA+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDDiDwCFEX8AKMz/jf/6Op2fXaTFujkGAL6c+ANAYcQfAAoj/gBQmMzxX6fFzx/p+1k7w7A/Xl0Mzy3H8T+8HgA4Xtb4L2ebYM9WzVHEft7Fuw7/PC3rw41VuhwF/tB6ACCPjPGv79rPr3bVug795Uf5a4PH/ofWAwC5ZL3zT8t587i+f4e/sY386Lcwfue/bz0AkE3e+Dc+3u03Ef/X+Dc+rQcAsvmS+Nd6j/q3kd/x2H97p7/vo749rwoAgKNkjP86LWbX6bE5Gsd7+zHf4E5+/MHf4fUAQB554z/4m97ncNcbgHY2G4HBY/+/rwcAjpcx/gDAKRB/ACiM+ANAYcQfAAoj/gBQGPEHgMKIPwAURvwBoDA747+8uU1VVTVHAMBURN+j860u/nf3D+np+aU5AgCmIvoenW918X99e9/uCuICTwAA4PRFz6Pr0ffofKuLf4gTsTOIi+LdgDHGGGNOd6Ln0fV++MMg/gDA9Ik/ABQlpT8MA29y0KyQjwAAAABJRU5ErkJggg==" InformativeScreenshot="9b9fd12cc15a88cf302fb093b1d7b035.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="330, 398, 121, 24" ElementType="Text" FriendlyName="'Zone Description'" FullSelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zone Description' tag='LABEL' type='' class='control-label' check:innerText='Zone Description' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAcCAYAAABMKLDaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVGhD7ZZRTsMwDIa5Cg887FgTD5xkD+MmSD0K046BBIcIie0utuOkLQswiD+pD7Sp+9tfFnEXnOFw6QPi0gfEpQ+ISx8Qlz4gLn1AXPqAuPRufISXx124P57p7yt4m8L+YRcOr/R3Z5h0Ch0/Zl/P4UQrf49zOJjZnsLLGy35Nf6k9ArfHGAbKL3I8vqM8nsM/KeB7D/7g1qQ3nH3dqEiPXFTm3MDtyb9fXqqBNLHrD5ecbPsp49wOrJ1j1N4pxUz4vniMd2QHoFaaoM269NGuTxX+bB/9nyuPYuaTxh4L/eM5L9lnTxPmY09g1x6Fv1mXpde++XQ/dxchJrPa+mEEPcwNH+vkAR1WuLb0mG4rMl2fV0rZj6qd8WGj+uFdFW7Ij2tK3rmdaEW/05ES+8480RFOi7Wv5pEMUhC3qcAap2QAo2oZovBadrSYRBr6+vBclrPEmLzzOjs9gyKHlZI7zZzwpRe7MYLWNgcOh94MQBEBKCdal1flb61PvYZLz1Q0YuBJaoivexF3bdqCekdZ06U0iFEbZd3DCDWr6UtPUkUw1xVH7MK+Uvvwoz+jXQcahk0s+WoaQZYOkJNGtL18LbW5+8vvXuNdF17UXrHmRNCOhRp7fAEBFLFITgf0poAuEZ/73TUw+TY0iF3IWmhfuzjUPSQv401eZb4bX4SrJSeTpCc18hkbTB9r9vMkSwdimBI+2JNUgjzGbA2QB7MfOl3JCidr4fL+BUgjfqLPczi83WRt0H6fjrLDEpAIn+HalY3Aqvz5ZlX/pFzemBLuAVc+rfh0gfEpQ+IS3duCJc+IC59QFz6cITwCTzBXqPL5OmlAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">ZoneDescription</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Edit/65a837c2-e876-42a8-9707-c2ae835d8ed6" DesignTimeRectangle="330, 484, 59, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Save' check:text='Save' /&gt;" Guid="7e00905c-dc0e-45a6-b789-87a5f274015c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAqCAYAAAAERIP3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHUSURBVGhD7ZqxTsMwEIZ5DER5Kt4AiYUBHqIbL9IJZWek6tCVNUPF1m5VhnbpcPh3bPfsXKGirij2/dI/JD6n+f6zk6G5ooql8F4fn2u6e5nS7UND1/evxRg84AIfV4DHAIpuHt9o9PROo+dpOTY84AIfDyDAIxkLLk0uxOADp1eARyrFdTy14QOnV4DH3hAnFGZweik8pPBCcWlWeCeFhxReKC7NCu+k8NBJ8M2aOncdr65dyLV/7Lzw842ZvaNZw86ZMNoa4Cery+2y5OzwtF3TWBgLTrdFqF/QbCuFt6TWlLXz+Djop9/7xlnh9ze2oYk4joD4WA9Mq6U9Hre7AUx8Lg3iyMAPODN8b3tDVodD8I7g7Krgz4x4NdhaF1TwYM7xPgu8tw+Bd4qfD2Kdw1hY+hZsH+BgXtAFwsPDzhqx7g2WOt4Y7jjtdBRMBp8dvn/99d0bgIrnsK/RyX7J81UjzT/FWeHjhxkcP9B4EPbYrwQhkM5cq0tBXX3cfRNW+hw40pnh3QWY0mUa1Ri4idRNETIe2+t3+x3OCv/frPBOCg8pvFBcmhXeSeEhhReKS7MIX/Vf1FV/nFD1ZykQBpAMirA3SjF4wMXBoQi+NlUMT/QFy6cVLZeRgsYAAAAASUVORK5CYII=" InformativeScreenshot="6c800d14b0c1295075ac901a4a9c6e31.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Edit Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                  <Sequence DisplayName="Delete a Zone" sap:VirtualizedContainerService.HintSize="400,290" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Navigate to 'Zones'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="e19287c8-78b9-4dc0-a1a3-d20a0b5bb3f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                  <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="Click the 'Delete' Image Button" sap:VirtualizedContainerService.HintSize="400,166" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="1819, 377, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='IMG' aaname='                                              ' /&gt;" Guid="043f9a58-3bed-4f41-9b5a-39289f389d0e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANTSURBVEhLxZVLKLVRFIbPOe4SuUcuuecUxYSJAeWSCXXORJlIuSRFJE6UkImQkZQJUwYmInKdiOOUobEJJZH7/dW7fHv3ff6f0a9/1arzbevdz9prr7XZ8Mv2fwHv7+/Y2tpCSUkJ/P39Ybfbxfm7qKgI6+vrEvOT/Qg4PT1FdXU1wsLCsLCwgL29PfGlpSVERESgvLwcJycnRvTfTQOqqqqQkZGB9PR07cnJyQgODpaM09LSLB4QEICgoCAkJSVZNJmZmSgrKzN2NQHW1tYwOzv7T3x5ednY1QS4vb2Fx+OB0+lEdna2OLNRztN95yomNzcX3d3duLm5MXY1AS4vL1FbWwubzSbOy2R5HA6H/mZJ6PzNNf6NMX5+flpXWVmJi4sLY1cT4Pr6GvX19TqwuLgY5+fncLvdsiEvlRe9urqKqKgoiWFCjOFlKx3jr66ujF2/lKilpUUHlpaWSgs2NzdLptHR0djY2MD+/j5iY2MF2tjYKDE1NTVa19DQIMkq04D7+3upnwrkCShua2vTgM3NTRwcHGhAU1OTaCsqKrSuvb0dd3d3sk7TgMfHRwwMDOjAvLw8vL29iYA1JoBD5/V6BUAoT0fjICpdb28vHh4eZJ2mAc/PzxgdHdWB7GkCOjo6/gDExcUJoLW1VbSFhYVaNzQ0hKenJ1mnacDr6ysmJyd1YGpqqqx1dXXJoBGwvb1tAbB8NLa20o2Pj+Pl5UXWaRrAbGdmZmQzBWBgT0+PBXB4eCgAnorlo7H/qeF0T09PS2LKNIAXOj8/j9DQUA1g2fr7+xEYGIiYmBjs7OxoAKGdnZ2izcnJEU1ISAjm5uYsD6AG0BYXF6XfFYC1HBkZkeEiYHd3Fz6fTwDMtq+vT3ScemrCw8NlVr4FrKysID4+XgPYWWNjY5KZOoEC8FSDg4Oiy8rKEg27y/wO0SwAZsjuYTBfUr4pU1NTUravd8Angl1H43tETUpKigyj2SwAZpefny/BiYmJ8tZPTEzICSIjIyU7Qghj2YaHh+Wp4MbU8C74/8JsFsDx8bFMMIM5qQkJCVIa9c3MWUL+5hrfJK6p74KCAhwdHRm7fZoFwFewrq5OLpB9roQ/OWMYS43L5cLZ2Zmx26dZAL9hvwwAPgDyxCXzJWsuDAAAAABJRU5ErkJggg==" InformativeScreenshot="8302691211e81e245951f4206bb7679a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ClickType="Single" CursorMotionType="Smooth" DelayAfter="1" DelayBefore="1" DisplayName="'Delete' the Zone" sap:VirtualizedContainerService.HintSize="400,166" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Delete/6f7e05cc-b72b-4209-a12f-0d281a0ea70a" DesignTimeRectangle="330, 466, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-danger' aaname='Delete' check:text='Delete' /&gt;" Guid="6af11ebf-693b-4040-96fa-94577b46d323" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVGhD7ZpBasMwEEV7phZ6gBZ6kx6gB8k+18gmlwhkGepVSJdZhYRQsghTaWyrkjy2NCZVCv4DD2Jrxo6epVnpgRCqgDBlBMK+NxV9vX9Q9fxGn48vk8Y6sC6sEz+cMDtgk6qnV+BjnPjSnDBeWVIBYDdtOGFYXQMYN204YbxvpWTAbtqAsAwgTAmEKYEwJRCmBMKUQJgSCFPyj4XN6Xwkuq7mwtj9uK2w2ZquzTPC2NFByh9kMsJOdJ6F9/erEz9XN/kRwhY785YxHyefIsIYnkzPmMjUhYkClnRp3slxXNN+ZP5h29xz4Ysbeo+OgsKaSW2XzXU9icsiGneTiYWl8g3iCsuoU1BUGPeyRpj/2xHUh8LS+QZBWFadgrutMP4thiwsnW8QhGXVKSgorBbQbg07kbA/xXSFDecbeoQl6xQUE8Zbw+sb8XUXYUum+k7flhzZryQKCKsn3mnGnBt/fdOgXb8JhaXz25zo/Tl1Cv5AWDfCPzuU7082EpbMr/ntWd4HyqjL5bbCJgCEKYEwJRCmBMKUQJgSCFMCYUogTIkoDMedBpCOO+FAXT/igToc2ezBOBGPbNqwA7zSTJLdt1PGOrAufFk2AmGIdECYKoh+AKBe9P7dz3BKAAAAAElFTkSuQmCC" InformativeScreenshot="bb1088045632e07851ad5ff40eaf31e4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Delete Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="f9b5a2f93d87fe4330cb56b3348d9901.jpg" Selector="&lt;html app='msedge.exe' title='Home Page - Connected Office: Device Management' /&gt;">
+            <uix:TargetApp.Url>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">ConnectedOfficeWebUrl</CSharpValue>
+              </InArgument>
+            </uix:TargetApp.Url>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
 </Activity>
