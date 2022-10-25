@@ -1,6 +1,6 @@
 {
   "name": "Connected Office Web Application-User Acceptance Testing",
-  "description": "UAT for IOT Device Management",
+  "description": "This process provides User Acceptance Testing (UAT) for the IOT Device Management system deployed at https://connectedoffice-devicemanagement.azurewebsites.net",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.16.0]",
