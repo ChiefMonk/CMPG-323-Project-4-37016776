@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="814,2423" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1288,10443" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="51">
       <x:String>System.Activities</x:String>
@@ -124,13 +124,13 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="704,2358" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1298,10378" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="This is a Process Defination document to test the functionality of the IoT Device Management System deployed at https://connectedoffice-devicemanagement.azurewebsites.net" DisplayName="User Acceptance Testing (UAT) for the IoT Device Management System" sap:VirtualizedContainerService.HintSize="662,2268" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="This is a Process Defination document to test the functionality of the IoT Device Management System deployed at https://connectedoffice-devicemanagement.azurewebsites.net" DisplayName="User Acceptance Testing (UAT) for the IoT Device Management System" sap:VirtualizedContainerService.HintSize="1256,10288" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="https://connectedoffice-devicemanagement.azurewebsites.net" Name="ConnectedOfficeWebUrl" />
         <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
@@ -145,13 +145,13 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Test the Connected Office Device Management" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use the Web Browser: Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="600,2104" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Test the Connected Office Device Management" AttachMode="ByInstance" CloseMode="Always" DisplayName="Use the Web Browser: Connected Office: Device Management" sap:VirtualizedContainerService.HintSize="1194,10135" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="566,1847" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence sap:VirtualizedContainerService.HintSize="1160,9878" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="FALSE" Name="FalseValue" />
                 <Variable x:TypeArguments="x:String" Default="TRUE" Name="TrueValue" />
@@ -161,7 +161,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Body of Test processes" sap:VirtualizedContainerService.HintSize="524,1755" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Body of Test processes" sap:VirtualizedContainerService.HintSize="1118,9786" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="TestResultsDatatable" />
                   <Variable x:TypeArguments="x:Int32" Default="0" Name="SelectedTestResultRow" />
@@ -172,7 +172,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Login to the Web Application" sap:VirtualizedContainerService.HintSize="462,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Login to the Web Application" sap:VirtualizedContainerService.HintSize="1056,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="Username" />
                     <Variable x:TypeArguments="x:String" Name="Password" />
@@ -342,7 +342,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="Because the same tests in the excel file could be rerun, we reset all the test results to FALSE" DisplayName="Reset the Test Results Data in Excel to FALSE" sap:VirtualizedContainerService.HintSize="462,287" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <Sequence sap2010:Annotation.AnnotationText="Because the same tests in the excel file could be rerun, we reset all the test results to FALSE" DisplayName="Reset the Test Results Data in Excel to FALSE" sap:VirtualizedContainerService.HintSize="1056,287" sap2010:WorkflowViewState.IdRef="Sequence_22">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="ResultsDatatable" />
                   </Sequence.Variables>
@@ -468,7 +468,7 @@
                     </ueab:ExcelApplicationCard>
                   </ueab:SequenceX>
                 </Sequence>
-                <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Load all the test results data from the excel file into the 'test result data table'" DisplayName="Read Test Results data into TestResultsDatatable" sap:VirtualizedContainerService.HintSize="462,103" sap2010:WorkflowViewState.IdRef="ReadRange_5" PreserveFormat="True" SheetName="Test Results" WorkbookPath="Data\Connected Office Test Data.xlsx">
+                <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Load all the test results data from the excel file into the 'test result data table'" DisplayName="Read Test Results data into TestResultsDatatable" sap:VirtualizedContainerService.HintSize="1056,103" sap2010:WorkflowViewState.IdRef="ReadRange_5" PreserveFormat="True" SheetName="Test Results" WorkbookPath="Data\Connected Office Test Data.xlsx">
                   <ui:ReadRange.DataTable>
                     <OutArgument x:TypeArguments="sd:DataTable">
                       <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">TestResultsDatatable</CSharpReference>
@@ -487,7 +487,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ReadRange>
-                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the zones in the ZoneDatatable and update the corresponding test result record by the Zone ID. The following tests are run per record:&#xA;1. Create a new Zone (zone name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Zone is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Zone (zone name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Zone, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Zone Testing" sap:VirtualizedContainerService.HintSize="462,312" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the zones in the ZoneDatatable and update the corresponding test result record by the Zone ID. The following tests are run per record:&#xA;1. Create a new Zone (zone name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Zone is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Zone (zone name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Zone, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Zone Testing" sap:VirtualizedContainerService.HintSize="1056,8343" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="ZoneName" />
                     <Variable x:TypeArguments="x:String" Name="ZoneDescription" />
@@ -495,22 +495,22 @@
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Clear existing Zones" sap:VirtualizedContainerService.HintSize="992,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                  <Sequence DisplayName="Clear existing Zones" sap:VirtualizedContainerService.HintSize="994,1378" sap2010:WorkflowViewState.IdRef="Sequence_39">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Int32" Default="2" Name="RowCounter" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="338,197" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                    <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" ContinueOnError="True" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="932,197" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="88ffcbe6-9da7-4caa-80bb-a036093fc26e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -520,7 +520,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Using a while loop to delete all existing test zones" DisplayName="Loop through all Zones and delete them" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Using a while loop to delete all existing test zones" DisplayName="Loop through all Zones and delete them" sap:VirtualizedContainerService.HintSize="932,1017" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                       <ui:InterruptibleWhile.Body>
                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="896,811" sap2010:WorkflowViewState.IdRef="Sequence_38">
                           <sap:WorkflowViewStateService.ViewState>
@@ -536,7 +536,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NClick sap2010:Annotation.AnnotationText="Delete the top zone" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="358,197" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                                <uix:NClick sap2010:Annotation.AnnotationText="Delete the top zone" ClickType="Single" ContinueOnError="True" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="358,197" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="1820, 377, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='IMG' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='IMG' aaname='                                              ' /&gt;" Guid="4aea8c68-637d-4941-9cf8-f8d3bbf40cec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANTSURBVEhLxZVLKLVRFIbPOe4SuUcuuecUxYSJAeWSCXXORJlIuSRFJE6UkImQkZQJUwYmInKdiOOUobEJJZH7/dW7fHv3ff6f0a9/1arzbevdz9prr7XZ8Mv2fwHv7+/Y2tpCSUkJ/P39Ybfbxfm7qKgI6+vrEvOT/Qg4PT1FdXU1wsLCsLCwgL29PfGlpSVERESgvLwcJycnRvTfTQOqqqqQkZGB9PR07cnJyQgODpaM09LSLB4QEICgoCAkJSVZNJmZmSgrKzN2NQHW1tYwOzv7T3x5ednY1QS4vb2Fx+OB0+lEdna2OLNRztN95yomNzcX3d3duLm5MXY1AS4vL1FbWwubzSbOy2R5HA6H/mZJ6PzNNf6NMX5+flpXWVmJi4sLY1cT4Pr6GvX19TqwuLgY5+fncLvdsiEvlRe9urqKqKgoiWFCjOFlKx3jr66ujF2/lKilpUUHlpaWSgs2NzdLptHR0djY2MD+/j5iY2MF2tjYKDE1NTVa19DQIMkq04D7+3upnwrkCShua2vTgM3NTRwcHGhAU1OTaCsqKrSuvb0dd3d3sk7TgMfHRwwMDOjAvLw8vL29iYA1JoBD5/V6BUAoT0fjICpdb28vHh4eZJ2mAc/PzxgdHdWB7GkCOjo6/gDExcUJoLW1VbSFhYVaNzQ0hKenJ1mnacDr6ysmJyd1YGpqqqx1dXXJoBGwvb1tAbB8NLa20o2Pj+Pl5UXWaRrAbGdmZmQzBWBgT0+PBXB4eCgAnorlo7H/qeF0T09PS2LKNIAXOj8/j9DQUA1g2fr7+xEYGIiYmBjs7OxoAKGdnZ2izcnJEU1ISAjm5uYsD6AG0BYXF6XfFYC1HBkZkeEiYHd3Fz6fTwDMtq+vT3ScemrCw8NlVr4FrKysID4+XgPYWWNjY5KZOoEC8FSDg4Oiy8rKEg27y/wO0SwAZsjuYTBfUr4pU1NTUravd8Angl1H43tETUpKigyj2SwAZpefny/BiYmJ8tZPTEzICSIjIyU7Qghj2YaHh+Wp4MbU8C74/8JsFsDx8bFMMIM5qQkJCVIa9c3MWUL+5hrfJK6p74KCAhwdHRm7fZoFwFewrq5OLpB9roQ/OWMYS43L5cLZ2Zmx26dZAL9hvwwAPgDyxCXzJWsuDAAAAABJRU5ErkJggg==" InformativeScreenshot="8f71a565333e1da2315ccd9a931bbb28.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" />
                                   </uix:NClick.Target>
@@ -546,7 +546,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <uix:NClick ClickType="Single" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                                <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Delete'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Delete/0c6ccbaa-f163-4106-9393-1bc882e8d84c" DesignTimeRectangle="330, 466, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Delete'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-danger' aaname='Delete' check:text='Delete' /&gt;" Guid="1d8e46d0-88ca-40ba-81b6-d51686cd407e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHaSURBVGhD7ZoxbsIwFIZ7qQ49AENP0gP0IMxcg4VDMDBWqlohhm4sgITKgF5jJ79xkpf4GRpaKf8nfVIhNqk/iCc/CMmCwTKpBft+e5evl1f5fHqWj8fJqHUNXAvXJCYEcxcYqq1rEkcLwVxNbQKd+DYgBOOvq1vXBoRg2kB6ETCYUcBgRgGDGQUMZhQwmFHAYEYBgxkFDGYU/LNgMznuRc7LmXLtbwW3B5uu5Fx9Rp2N7LTxvY4m2EGO0/r72+XBf27e4q8INt8Ud7nmy8kTDBbM6xfTcU117MHUAAs5Vff07FeyvXL8bl29F4jD9d0nXzBwsGpR60X1ulzEad64HhbTDJYaX6j+wgzzMgWDB/N7WRUs/jtYm18Plh5fqAQzzcsU3PUX5v9W0YOlxxcqwUzzMgV32cPwaLiFIIZuO1j/+MKOYMl5mYJBg/lHI9o3mq/bKo9kat/peiRv2K80wUDByoW3NmM/tvntFxt02G/qwdLjMaZxf8u8TMEvBWtT/2f7xseLbQRLji+97FnRF2SYlyO4PdhIBAxmFDCYUcBgRgGDGQUMZhQwmFHAYEYBgxkFIRiPO3WrHnfigbpu1QN1PLKp65qoRzYd7oKryXCGQ8HEBoNlIfIDRA89RDU7BI0AAAAASUVORK5CYII=" InformativeScreenshot="5e7c67362e4a2a18762ebd7de4f53e26.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Delete Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                                   </uix:NClick.Target>
@@ -595,13 +595,13 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InterruptibleWhile>
                   </Sequence>
-                  <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Load all the zone test data from the excel file into the 'zone data table'" DisplayName="Read 'Zone' sheet into ZoneDatatable" sap:VirtualizedContainerService.HintSize="992,139" sap2010:WorkflowViewState.IdRef="ReadRange_3" PreserveFormat="True" SheetName="Zone" WorkbookPath="Data\Connected Office Test Data.xlsx">
+                  <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Load all the zone test data from the excel file into the 'zone data table'" DisplayName="Read 'Zone' sheet into ZoneDatatable" sap:VirtualizedContainerService.HintSize="994,139" sap2010:WorkflowViewState.IdRef="ReadRange_3" PreserveFormat="True" SheetName="Zone" WorkbookPath="Data\Connected Office Test Data.xlsx">
                     <ui:ReadRange.DataTable>
                       <OutArgument x:TypeArguments="sd:DataTable">
                         <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">ZonesDatatable</CSharpReference>
@@ -618,13 +618,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ReadRange>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterate the datatable and read zone record and perform the actions described above" DisplayName="Test each row of zone data from the datatable" sap:VirtualizedContainerService.HintSize="992,3610" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Iterate the datatable and read zone record and perform the actions described above" DisplayName="Test each row of zone data from the datatable" sap:VirtualizedContainerService.HintSize="994,6333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="958,3453" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="958,6176" sap2010:WorkflowViewState.IdRef="Sequence_21">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="ZoneId" />
                           </Sequence.Variables>
@@ -754,15 +754,15 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEachRow>
-                          <Sequence sap2010:Annotation.AnnotationText="Create a new Zone" DisplayName="CREATE a Zone" sap:VirtualizedContainerService.HintSize="916,121" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <Sequence sap2010:Annotation.AnnotationText="Create a new Zone" DisplayName="CREATE a Zone" sap:VirtualizedContainerService.HintSize="916,2023" sap2010:WorkflowViewState.IdRef="Sequence_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" ContinueOnError="True" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="88ffcbe6-9da7-4caa-80bb-a036093fc26e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                               </uix:NClick.Target>
@@ -772,19 +772,19 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Add Zone' button" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'Add Zone' image button" sap:VirtualizedContainerService.HintSize="854,92" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Add Zone' button" ClickType="Single" ContinueOnError="True" CursorMotionType="Smooth" DisplayName="Click 'Add Zone' image button" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="450, 244, 30, 30" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='              ' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='              ' tag='IMG' type='' class='' /&gt;" Guid="9f7ecb87-f935-4f41-b54e-a793a3687e01" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASZSURBVFhH1ZZZK3ZRFMcNmck8D7kgFPdS5BMoLlygECFjRPgOuETm4Ur5EC6kXIgokpAyZShxY15vv/3u8zg85znPodT7/mvXae991v7vtf5r7eUj/wj+PyKvr69yeXkpy8vL0tTUJAUFBRIRESF+fn5qhIeHS35+vjQ2NsrS0pJcXFyof5zCK5Hn52fZ39+XgYEBSU5OFh8fH3VwQECABAUFSXBwsBp8M8ear6+vJCYmSm9vr+zt7cnT05O25hkeiby/v8vt7a3Mz89LZmamMs6BHFBYWKi8MjQ0JIuLi2qMjIxIS0uLFBUVSVJSktrLPxkZGTI1NSU3NzfKpidYEnl7e5OTkxPp6upSNwwMDJSsrCzp6OiQjY0NW4OsbW1tSXd3t2RnZytPYaO1tVWOj4+VbSu4EcEQJJqbm9WNIiMjpaysTFZWVvQO51hdXZXy8nKJiopSturr6+Xo6MjyIm5ECAee4MfY2Fjp7OyUu7s7vfp93N/fK+/Ex8crm4Tv+vpar37gExFENTc3p1yJJyDx+PioV38O7Pb09CjPYHtiYsJNwJ+IkB0IE00QDm+eID1J0/Pzc3l5edGz1sAzFRUVSjPp6emyu7urV/7CRQSjpCjuQ5hONHFwcCD9/f3S19enLuENa2trkpOTo7yCt811xkWEYkWdIO3IDieYnZ1VsY+Li5Pp6Wk9aw9Ih4SESEJCgvKkARcRKibFijpBijoBhyPo6OhomZyc1LP22N7eVhfG8wsLC3rWRIQChcsoVnZ1woyfEMF2SUmJOqumpkbPmojwdlCiIeQUPyECSGfOysvL0zMmIjxgKJqy/RWICmGiCQ43Rl1dnYSFhUloaKjU1tZ+WmMvArbKprGxMXUW/xpwEcFVCJV34ytIUbIDYeIBY/DiEmsG3+Y19lI7zs7OtJUPoEfO8vf31zMOiaBu1E52xMTEuAY3MojwbV5jLxX69PRUW/mAQYQzDbiFZnh4WM98APfi5pmZGfWSGoNwmENjXmMvRYs24ivGx8c9h4amBgHx2DkFWiAM3xUrIeOs3NxcPWMiQmeFq+gnfjt9S0tL1VlVVVV61kSE9o5Y09Rsbm7qWXv8hMjOzo6kpKSos3hgDbiIkBlUVUREnjsBOjAyCVJOwHtGiUfMZiG7iFAr6DFhSmdFU+MNCJh4kx1fX1MrrK+vK10Qlvb2dutHD9Do0mOiaDornm47kE3UCW5mlR1mPDw8SGVlpbKdlpamQmTW4iciNCukHoxpYgiRkw7cG7BBHUJL2B4dHbVvjADdNo0uITKqozfP2AFPQAL9YbOhoUGurq7cMtONCBvotml0+RHP0FnR1HwXaIJw4AlsVVdXy+HhoWUn70YEsJFum0YXVxJXOituRj9hV2dYI/6Dg4PqdeVfbOAJTySAJRGAQbptGl0EjDHSjqamuLhY6YdXlHeDQdkmjBQr6gR7+Sc1NVVpgnB4IgE8EjGAqEhNUpT2DhdzACWa21J3GHwzxxp7qBNtbW3KO9iw8yLwSsQAOc8rTHtHZ4XbebR4yjmcb8JH2aZiktL8442AAcdEfhv/CBGRPxsE59eMBi8zAAAAAElFTkSuQmCC" InformativeScreenshot="2dedc7c12d6a94b76b3fb271e7d19fa8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                               </uix:NClick.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the zone name from the ZoneName variable" ClickBeforeMode="Single" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the zone name from the ZoneName variable" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Zone Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 344, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneName'" FullSelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneName' tag='INPUT' type='text' class='form-control' aaname='Zone Name' /&gt;" Guid="5c5aff4d-c7ac-4c2b-a3c7-d0f577c226fd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="acab8694ca61f2cd6d32292b87f37c77.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
                                   <uix:TargetAnchorable.Anchors>
@@ -805,7 +805,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the zone description from the ZoneDescription variable" ClickBeforeMode="Single" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,269" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Enter the zone description from the ZoneDescription variable" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Zone Description'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="854,269" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 430, 507, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ZoneDescription'" FullSelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZoneDescription' tag='INPUT' type='text' class='form-control' aaname='Zone Description' /&gt;" Guid="27df0890-784e-42ca-8296-12e924f99e7f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAf8AAAAqCAYAAAC9dVKWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAh9AXO+D86guft/NR8DAKgi/gBQ5iX+t/tjHI6nsdv/jM+vbzMzM3vjpefpevq+tsQ/D3LofLmOaZqe3wIA7yo9T9fT9/UFYIl/bgY5AABsS/qezs+W+OdW4Bc/AGxP+p7Oz5b4590AALBN686LPwAUEH8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQBnxB4Ay4g8AZcQfAMqIPwCUEX8AKCP+AFBG/AGgjPgDQJl/47/b/4xpmp6fAICtSN/T+dkS/8PxNM6X6/MTALAV6Xs6P1vif7s//m4FOeAfAAB4f+l5up6+p/OzJf6RB7kZ5FDeDZiZmdn7Lj1P19fhj5f4AwDbJ/4AUGWMX8GG+6SZz+k7AAAAAElFTkSuQmCC" InformativeScreenshot="5cef430d4132790efebc3612d9736e19.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete">
                                   <uix:TargetAnchorable.Anchors>
@@ -826,7 +826,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NTypeInto>
-                            <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Create' button to create the zone" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NClick sap2010:Annotation.AnnotationText="Click the 'Create' button to create the zone" ClickType="Single" ContinueOnError="True" CursorMotionType="Smooth" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones/Create" DesignTimeRectangle="330, 484, 72, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Create'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Create' check:text='Create' /&gt;" Guid="7451368e-f19f-4598-904a-65a7cd3850df" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAAqCAYAAAAZOr1sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVGhD7Zq/bsIwEIf7GFXpU/UNKnXp0D4EW1+EqWLvWMTA2jUD6gYbYoCF4eozsXO2z+BDjhDN/aRvSeL8+XxnZfAdaERRYcIEwn5+N/D0MYPHlyncP38OGnSALtAJjReGJ/Cih9cvGL19w+h9NmyMA3SBTqg0LwxtWlnc4AGDTtCNixeGJrWyGIwTdOPihWHfsgMU68ZFhRWgwoSoMCEqTIgKE6LChKgwISpMiAoT0puwybq9GUmz4K+9JeoLm25ga+6xbZbh8cUuPVadFTTm2X1OTGVh/b/waW5M2Lg5AOw3MGbOUWy7rle+bWnlha18gPmUjj0K6bKDiTtnKjhOJy4aV/COOSoKW8J8z7Qig5MSV4IT6Y9ZCZ20cbMLBNrrg4/nKiw9lo4rp7qwknZgX9iufaRiLGcmwQqlY1I5turpJCD2WXH1lnG9Cos/gmkpF3pPKyDIaWH2WWyuLiwjgiEr7GSbtOsQvaagwvBZJZNYSlVh8ZqTgxV2rk0SOdyxTEteuF5x1BVmcC2TrGXm49xM85V4bOn44ybrVkgitK24QBizLLD/hWZsQSdwVBdmaV8yTPdh+dZtpZHk1y9zv2zVHeMnLXmfy9YvpB9h/xgVJkSFCVFhQlSYEBUmRIUJUWFCVJgQVphud8qQ2+6kG+p4shvqdMtmhHGALtAJu2UTgyfQJl6EfTtk0AG6oLIwgTDN+agwUQD+AJsckLZ8QHSNAAAAAElFTkSuQmCC" InformativeScreenshot="6924513a800b306e5a57b84a41897747.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Create Zone - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Complete" />
                               </uix:NClick.Target>
@@ -891,15 +891,15 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NCheckState>
                           </Sequence>
-                          <Sequence sap2010:Annotation.AnnotationText="Read and display the created Zone" DisplayName="READ a Zone" sap:VirtualizedContainerService.HintSize="916,121" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                          <Sequence sap2010:Annotation.AnnotationText="Read and display the created Zone" DisplayName="READ a Zone" sap:VirtualizedContainerService.HintSize="916,942" sap2010:WorkflowViewState.IdRef="Sequence_32">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
+                            <uix:NClick sap2010:Annotation.AnnotationText="Navigate back to the list of zones" ClickType="Single" ContinueOnError="True" CursorMotionType="Smooth" DisplayName="Click 'Zones'" sap:VirtualizedContainerService.HintSize="854,197" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ee0dce0d-a21d-4372-ab1b-e3eb2389c50c" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://connectedoffice-devicemanagement.azurewebsites.net/Zones" DesignTimeRectangle="8, 304, 292, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Zones'" FullSelectorArgument="&lt;webctrl aaname='Zones' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zones' tag='A' type='' class='nav-link text-dark' check:innerText='Zones' /&gt;" Guid="88ffcbe6-9da7-4caa-80bb-a036093fc26e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASgAAAAsCAYAAADW4SW7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJBSURBVHhe7d09ThtRFAVgJ2QLCVlIqkhJ2Iwld6yBloIV0NOwAHoKOhZAwR6SDUwM44MfM2NDpLFyi+9In2QxzwPV0X3PPyw+fvnZJY9/fgP8d8niw2cFBdSSrAvqx+ahggJqSExQQDmJggLKSRQUUE6ioIByEgUFlJMoKKCcxBs1gXISBQWUk9jiAeUk6wnq1+ahggJqSBZHxyebhwoKqCExQQHlJM6ggHISExRQTjJfQd2dd9++n+x1djfxPICBZL4tnoICZpIcdovXlNby+mF6DcBAcsCCuu3OMj2dXnX3g+v316uX8uqtusvHqevn3U17r7XRJPZ41S2b6/1zttff+l1ALcmBXsV76C5Pp8vi9bWxlM+2VFbdcrS+uefOrWW/ZlxOTxQUVJYcpKDaUhhNO02hbK81pbWZttp7ZHs4vm/zvIvb0b2e1txcbK5PTHFATcni6HjmLd4b507bktm1DRtOPs26ZivXF9Trrd/Q8+8fTVimJ6gumfejLu1Z0I6J5WWimaOgRmdPA5mqJtY5tIe6khknqPZsac+U8s9bvHdOUC9bvH2mtoRANclsE9R2MtqtL5W2yMZSWu8rqHbdwKbodv1d23IEqkkWc31h3fsLatf6/Vu+559PFNSzqVfy9hSUcoLaEh8WBspJfFgYKCdRUEA5yWxnUABzSUxQQDnJ4tNX30kO1JKYoIByEm8zAMpJTFBAOYn/iweUk5iggHISZ1BAOYk3agLlJLZ4QDmJLR5QTuJVPKCcPl33F5AR0r3418JWAAAAAElFTkSuQmCC" InformativeScreenshot="0f0b22e7b459bef3b300203c89c3ab36.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Zones - Connected Office: Device Management' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                               </uix:NClick.Target>
@@ -1290,7 +1290,7 @@
                     </ueab:ExcelApplicationCard>
                   </ueab:SequenceX>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the categories in the CategoryDatatable and update the corresponding test result record by the Category ID. The following tests are run per record:&#xA;1. Create a new Category (category name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Category is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Category (category name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Category, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Category Testing" sap:VirtualizedContainerService.HintSize="462,327" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the categories in the CategoryDatatable and update the corresponding test result record by the Category ID. The following tests are run per record:&#xA;1. Create a new Category (category name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Category is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Category (category name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Category, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Category Testing" sap:VirtualizedContainerService.HintSize="1056,327" sap2010:WorkflowViewState.IdRef="Sequence_98">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="CategoryName" />
                     <Variable x:TypeArguments="x:String" Name="CategoryDescription" />
@@ -2093,7 +2093,7 @@
                     </ueab:ExcelApplicationCard>
                   </ueab:SequenceX>
                 </Sequence>
-                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the devices in the DeviceDatatable and update the corresponding test result record by the Device ID. The following tests are run per record:&#xA;1. Create a new Device (device name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Device is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Device (device name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Device, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Device Testing" sap:VirtualizedContainerService.HintSize="462,312" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                <Sequence sap2010:Annotation.AnnotationText="One at a time, test all the devices in the DeviceDatatable and update the corresponding test result record by the Device ID. The following tests are run per record:&#xA;1. Create a new Device (device name and description), then update the 'Create Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;2. Check if the created Device is read and displayed correctly, then update the 'Read Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Update the Device (device name and description), then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;3. Delete the Device, then update the 'Update Test Passed' to TRUE if passed, otherwise 'FALSE&#xA;4. At the end, update the 'Test Results' sheet with values in the TestResultsDatatable&#xA;" DisplayName="Device Testing" sap:VirtualizedContainerService.HintSize="1056,312" sap2010:WorkflowViewState.IdRef="Sequence_117">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="DeviceName" />
                     <Variable x:TypeArguments="x:String" Name="DeviceStatus" />
